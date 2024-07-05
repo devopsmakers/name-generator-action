@@ -9,7 +9,7 @@ const {uniqueNamesGenerator,
 try {
   const context = github.context;
 
-  const seed = JSON.stringify(context.issue);
+  const seed = core.getInput('seed') || JSON.stringify(context.issue);
 
   const config = {
     dictionaries: [adjectives, colors, animals, names],

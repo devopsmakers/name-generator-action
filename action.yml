@@ -3,6 +3,9 @@ description: 'Generate a consistent, unique name based on PR'
 branding:
   icon: 'anchor'
   color: 'blue'
+inputs:
+  seed:
+    description: 'The seed to generate the name'
 outputs:
   name:
     description: 'The generated unique and consistent name'
